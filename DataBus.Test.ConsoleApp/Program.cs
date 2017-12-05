@@ -15,7 +15,7 @@ namespace DataBus.Test.ConsoleApp
             _services.ConfigureServices();
 
             var productService = Infra.CrossCutting.IoC.Bootstrapper.GetInstance<IProductService>();
-            var novoProduto = productService.Add(new Domain.DomainModels.Product());
+            var novoProduto = productService.GetAll();
     }
     }
 }
